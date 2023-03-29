@@ -1,0 +1,19 @@
+appId: com.adxre.ddos
+productName: DDoS GUI
+artifactName: DDoS_GUI.${ext}
+directories:
+  output: dist/${os}
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null
+win:
+  target: [portable]
+linux:
+  synopsis: DDoS GUI
+  description: This is the GUI Dashboard for the Botnet.
+  category: Security
+  target: [AppImage]
